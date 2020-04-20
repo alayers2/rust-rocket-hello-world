@@ -7,10 +7,5 @@
     "website": "https://github.com/alayers2/rust-rocket-hello-world",
     "env": {
       "BUILDPACK_URL": "https://github.com/emk/heroku-buildpack-rust.git"
-    },
-    "buildpacks": [
-      {
-        "url": "https://github.com/emk/heroku-buildpack-rust"
-      }
-    ]
+    }
   }

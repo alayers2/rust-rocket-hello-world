@@ -9,11 +9,6 @@ fn index() -> &'static str {
     "Hello, world!"
 }
 
-fn build_rocket() -> Rocket {
-    rocket::ignite()
-    .mount("/", routes![index])
-}
-
 fn main() {
     rocket::ignite()
     .mount("/", routes![index])
