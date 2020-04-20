@@ -10,7 +10,7 @@
     },
     "buildpacks": [
       {
-        "url": "emk/rust"
+        "url": "https://github.com/emk/heroku-buildpack-rust"
       }
     ]
   }
