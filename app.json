@@ -1,11 +1,11 @@
 {
-    "name": "Rust-Rocket-Hello-World",
-    "description": "A Simple Hello-World Rust Application",
-    "repository": "https://github.com/alayers2/rust-rocket-hello-world",
-    "success_url": "/",
-    "keywords": ["rust", "rocket"],
-    "website": "https://github.com/alayers2/rust-rocket-hello-world",
-    "env": {
-      "BUILDPACK_URL": "https://github.com/emk/heroku-buildpack-rust.git"
-    }
+  "name": "Rust-Rocket-Hello-World",
+  "description": "A Simple Hello-World Rust Application",
+  "repository": "https://github.com/alayers2/rust-rocket-hello-world",
+  "success_url": "/",
+  "keywords": ["rust", "rocket"],
+  "website": "https://github.com/alayers2/rust-rocket-hello-world",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/emk/heroku-buildpack-rust.git"
   }
+}

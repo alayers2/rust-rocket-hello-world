@@ -18,19 +18,18 @@ fn main() {
     build_rocket().launch();
 }
 
-
 #[cfg(test)]
- mod test {
-     use super::build_rocket;
-     use rocket::local::Client;
-     use rocket::http::{Status};
+mod test {
+    use super::build_rocket;
+    use rocket::local::Client;
+    use rocket::http::{Status};
 
-     #[test]
-     fn hello_world() {
-         let client = Client::new(build_rocket()).expect("valid rocket instance");
-         let mut response = client.get("/").dispatch();
+    #[test]
+    fn hello_world() {
+        let client = Client::new(build_rocket()).expect("valid rocket instance");
+        let mut response = client.get("/").dispatch();
 
-         assert_eq!(response.status(), Status::Ok);
-         assert_eq!(response.body_string(), Some("Hello, world!".into()));
-     }
- }
+        assert_eq!(response.status(), Status::Ok);
+        assert_eq!(response.body_string(), Some("Hello, world!".into()));
+    }
+}
