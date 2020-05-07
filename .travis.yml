@@ -12,8 +12,9 @@ script:
 - cargo build --verbose
 - cargo test --verbose
 
-after_success: |
+after_success: 
+- |
   if [[ "$TRAVIS_RUST_VERSION" == nightly && "$TRAVIS_OS_NAME" == "linux" ]]; then
     cargo tarpaulin --out Xml
     bash <(curl -s https://codecov.io/bash)
-  fi%
+  fi
